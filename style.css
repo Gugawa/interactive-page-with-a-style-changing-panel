@@ -1,0 +1,125 @@
+body{
+	background-color: pink;
+}
+.box{
+	margin: 0 auto;
+	margin-top: 25px;
+	width: 800px;
+	height: auto;
+	border-radius: 20px;
+    border: 0px solid black;
+}
+.naglowek{
+	width: 92%;
+	height: 110px;
+	background-color: #444466;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	padding-top: 40px;
+	padding-left: 8%;
+	font-family: "Verdana";
+	background-image: url('komp.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+    transition: all 0.75s;
+}
+.cialo{
+	width: 100%;
+	height: 390px;
+	background-color: white;
+    transition: all 0.75s;
+}
+.stopka{
+	width: 100%;
+	height: 42px;
+	background-color: #664443;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+	text-align: center;
+	padding-top: 3%;
+    transition: all 0.75s;
+	
+}
+.lewy{
+	width: 30%;
+	height: 100%;
+	float: left;
+    font-size: 16px;
+}
+.prawy{
+	width: 68%;
+	min-height: 88%;
+	float: left;
+	}
+.tekst1{
+	padding-top: 10%;
+	font-family: "Verdana";
+	font-size: 25px;
+	font-weight: bold;
+}
+.tekst2{
+	padding-top: 2%;
+	padding-right: 2%;
+	font-size: 12px;
+}
+.bok{
+	width: 80%;
+	height: 7%;
+	border-bottom: 1px dashed grey;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.bok2{
+	width:65%;
+	height:40%;
+	color: black;
+	font-size: 12px;
+	padding-left: 15px;
+	padding-top: 10px;
+	
+}
+#panel{
+
+	width: 200px;
+	height: 620px;
+	position: absolute;
+	left: -150px;
+	top: 25px;
+	background-color: #baaa44;
+	border: 1px solid black;
+	border-radius: 0px 35px 35px 0px;
+	transition: all 2s;
+	float: right;
+	text-align: center;
+}
+
+#panel:hover{
+	transform: translateX(145px);
+}
+
+.allTekst{
+    color: white;
+}
+
+.button1{
+    width: 33%;
+    float: left;
+}
+
+.button2 {
+    clear: both;
+    width: auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#linki{
+    color: brown;
+}

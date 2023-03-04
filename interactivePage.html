@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Interactive page</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="pl">
+<meta name="author" content="Daniel Zwijacz">
+<link rel='stylesheet' href='style.css'>
+
+</head>
+<script>
+function zmienKolor(){
+
+    var kolor = document.getElementById("color").value;
+    document.getElementById("lorem1").style.color = kolor;
+    document.getElementById("lorem2").style.color = kolor;
+    document.getElementById("lorem3").style.color = kolor;
+    document.getElementById("bok2").style.color = kolor;
+    document.getElementById("link").style.color = kolor;
+    document.getElementById("linki").style.color = kolor;
+    
+}
+
+function zmienCzcionke() {
+    
+    var czcionka = document.getElementById("czcionka").value;
+    
+    if(czcionka == "a"){
+        
+        document.getElementById("cialo").style.height = "390px";
+        document.getElementById("lorem2").style.fontSize = "12px";
+        document.getElementById("lorem3").style.fontSize = "12px";
+        document.getElementById("bok1").style.fontSize = "16px";
+        document.getElementById("bok2").style.fontSize = "12px";
+        
+    }
+    else if (czcionka == "b"){
+        
+        document.getElementById("cialo").style.height = "450px";
+        document.getElementById("lorem2").style.fontSize = "14px";
+        document.getElementById("lorem3").style.fontSize = "14px";
+        document.getElementById("bok1").style.fontSize = "17px";
+        document.getElementById("bok2").style.fontSize = "14px";
+       
+    }
+    else if (czcionka == "c") {
+        
+        document.getElementById("cialo").style.height = "540px";
+        document.getElementById("lorem2").style.fontSize = "16px";
+        document.getElementById("lorem3").style.fontSize = "16px";
+        document.getElementById("bok1").style.fontSize = "18px";
+        document.getElementById("bok2").style.fontSize = "15px";
+    }
+    
+    
+}
+
+function zmienTlo() {
+    
+    var div = document.getElementById("tlo").value;
+    var r = document.getElementById("colorR").value;
+    var g = document.getElementById("colorG").value;
+    var b = document.getElementById("colorB").value;
+    
+    if(div == "a"){
+        document.getElementById("naglowek").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+        document.getElementById("cialo").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+        document.getElementById("stopka").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+        document.getElementById("panel").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    }
+    else if(div == "b"){
+        document.getElementById("naglowek").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    }
+    else if(div == "c"){
+        document.getElementById("cialo").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    }
+    else if(div == "d"){
+        document.getElementById("stopka").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    }
+    else if(div == "e"){
+        document.getElementById("panel").style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    }
+}
+
+function zmienGrubosc() {
+    
+    var grubosc = document.getElementById("border").value;
+    document.getElementById("box").style.borderWidth = grubosc + "px";
+}
+
+function zmienRodzaj() {
+    
+    var rodzaj = document.getElementById("rodzaj").value;
+    document.getElementById("box").style.borderStyle = rodzaj;
+    
+}
+
+
+function pobierzKolory() {
+    
+    var naglowek = document.getElementById("naglowek").style.backgroundColor;
+    var artykul = document.getElementById("cialo").style.backgroundColor;
+    var stopka = document.getElementById("stopka").style.backgroundColor;
+    var panel = document.getElementById("panel").style.backgroundColor;
+    
+    alert("Tło nagłówka: " + naglowek + "\n" + 
+          "Tło artykułu: " + artykul + "\n" + 
+          "Tło stopki: " + stopka + "\n" + 
+          "Tło panelu: " + panel);   
+}
+
+function zmienAdres() {
+    
+    var adres = document.getElementById("adres").value;
+    document.getElementById("link").href = adres;
+}
+</script>
+<body>
+	<div class="box" id="box">
+		<div class="naglowek" id="naglowek">My Website!</div>
+		<div class="cialo" id="cialo">
+			
+			<div class="lewy" id="bok1">
+			    <div id="linki">
+				<div class="bok">Home</div>
+				<div class="bok">About</div>
+				<div class="bok">Interesting Things</div>
+				<div class="bok">Boring things</div>
+				<div class="bok">Contact</div>
+				</div>
+				<div class="bok2" id="bok2">Лорем ипсум долор сит амет, не воцент нумяуам маиорум пер, денияуе проприае менандри вис ат. Еум ан унум легере. Велит санцтус ан нам. Санцтус рецусабо интерпретарис ад вел, ан нам фастидии омиттантур.</div>
+				
+				
+			</div>
+			
+			<div class="prawy">
+				<div class="tekst1" id="lorem1">Лорем ипсум</div>
+				<div class="tekst2" id="lorem2">Лорем ипсум долор сит амет, не воцент нумяуам маиорум пер, денияуе проприае менандри вис ат. Еум ан унум легере. Велит санцтус ан нам. Санцтус рецусабо интерпретарис ад вел, ан нам фастидии омиттантур. Хас виси нуллам долорем ех. Фугит детрахит ин цум, ех малорум луптатум хас, еи цасе цаусае аппареат сед.Нихил садипсцинг меи ад. Мел еу фугит епицуреи елецтрам, при цонгуе облияуе цонтентионес ин, меи персиус оффициис детрахит ад. Не харум популо симилияуе вих, сеа не веро лаудем анимал, луптатум постулант ад еам. Цу меи нуллам ратионибус, ех меа мутат доценди.</div>
+				<div class="tekst2" id="lorem3">Нонумы видиссе детерруиссет еос ад. Ин яуи яуем десерунт инструцтиор. Бруте интегре сед ид, еу про поссим мандамус дефинитионем. Идяуе велит сингулис ет еам, вирис дицант номинави иус ет. Хас оффициис иудицабит но, иус еу легендос цонтентионес нецесситатибус. При легимус лобортис ут, мел нонумес елояуентиам но.
+				Мунере фацете еос еи, цу утинам еирмод цум, но веритус глориатур елаборарет еам. Те нам фацер партиендо персецути, еи поссит граецо еам. Цу еам видерер денияуе аццусамус, еам иусто постеа ан, хендрерит аццоммодаре ат дуо. Игнота епицуреи еум ат.
+				Но сале витае инвидунт хис. Меи виде цоммодо ин, при ид новум деленит, алиа цетеро цонцептам еам еи.</div>
+				</div>
+			</div>
+		<div class="stopka" id="stopka"><a href="#" id="link">&copy;Foolbar Inc.</a></div>
+	</div>
+	
+	<div id="panel">
+		
+		<p class="allTekst">Zmień kolor tekstu na stronie</p>
+		<input type="color" id="color" name="color" onchange="zmienKolor()" value="ff0000">
+		<p class="allTekst">Zmień wielkość czcionki</p>
+		<select id="czcionka" onchange="zmienCzcionke()">
+		    <option value="a" selected>mała</option>
+		    <option value="b">średnia</option>
+		    <option value="c">duża</option>
+		</select>
+		
+		<p class="allTekst">Zmień kolor tła</p>
+		Red <input type="range" min="0" max="255" id="colorR">
+        Green <input type="range" min="0" max="255" id="colorG">
+        Blue <input type="range" min="0" max="255" id="colorB">
+		
+		<select id="tlo" onchange="zmienTlo()">
+            <option value="blank"></option>
+		    <option value="a">całej strony</option>
+		    <option value="b">nagłówka</option>
+		    <option value="c">artykułu</option>
+		    <option value="d">stopki</option>
+		    <option value="e">panelu</option>
+		</select>
+		
+		<p class="allTekst">Zmień grubość obramowania</p>
+		<input type="range" min="0" max="3" id="border" value="0" onchange="zmienGrubosc()">
+		
+		<p class="allTekst">Zmień rodzaj obramowania</p>
+		<select name="rodzaj" id="rodzaj" onchange="zmienRodzaj()">
+		    <option value="none">brak</option>
+		    <option value="solid">ciągłe</option>
+		    <option value="double">podwójne</option>
+		    <option value="dashed">przerywane</option>  
+		</select>
+				
+		<p class="allTekst"></p>
+		<input type="submit" value="Pobierz kolory tła" onclick="pobierzKolory()" class="button2">
+		<p class="allTekst"></p>
+		<input type="text" placeholder="Zmień adres linku" id="adres">
+		<input type="submit" value="zmień" onclick="zmienAdres()">
+	</div>
+</body>
+</html>
